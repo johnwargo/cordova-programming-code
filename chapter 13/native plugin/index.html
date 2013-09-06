@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carrier Demo</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			//Do some general error checking
+			window.onerror = function(msg, url, line) {
+				var idx = url.lastIndexOf("/");
+				if (idx > -1) {
+					url = url.substring(idx + 1);
+				}
+				alert("ERROR in file " + url + " (line #" + line + "): " + msg);
+				return false;
+			};
+
+			function onBodyLoad() {
+				//alert("onBodyLoad");
+				document.addEventListener("deviceready", onDeviceReady, false);
+			};
+
+			function onDeviceReady() {
+				//alert("onDeviceReady");
+			};
+
+			function doSomething1() {
+				carrier.getCarrier(onSuccess, onFailure);
+			}
+
+			function doSomething2() {
+				carrier.getCountryCode(onSuccess, onFailure);
+			}
+
+			function onSuccess(result) {
+				console.log(JSON.stringify(result))
+			}
+
+			function onFailure(err) {
+				console.error("getting back from a call to my plugin");
+				console.log("onFailure: " + JSON.stringify(err));
+				alert("onFailure: " + err);
+			}
+		</script>
+	</head>
+	<body onload="onBodyLoad()">
+		<h1>Carrier Demo</h1>
+		<p>
+			This is a Cordova application that uses my fancy new Carrier plugin.
+		</p>
+		<button onclick="doSomething1();">
+			Get Carrier Name
+		</button>
+		<button onclick="doSomething2();">
+			Get Country Code
+		</button>
+	</body>
+</html>

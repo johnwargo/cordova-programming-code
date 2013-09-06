@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.cordovaprogramming.meaningoflife" version="1.0.0">
+	<info>This plugin exists for no other reason but to demonstrate how to build a simple, JavaScript-only plugin for Apache Cordova.</info>
+	<name>MoL</name>
+	<description>Calculates the Meaning of Life (an obscure reference to Douglas Adams' Hitchhiker's Guide to the Galaxy)</description>
+	<author>John M. Wargo</author>
+	<keywords>mol, Meaning of Life</keywords>
+	<license>Apache 2.0 License</license>
+	<engines>
+		<engine name="cordova" version="3.0.0" />
+	</engines>
+	<js-module src="mol.js" name="mol">
+		<clobbers target="mol" />
+	</js-module>
+</plugin>
