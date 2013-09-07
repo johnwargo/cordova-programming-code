@@ -24,6 +24,8 @@ public class CarrierPlugin extends CordovaPlugin {
 	public TelephonyManager tm;
 
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+		super.initialize(cordova, webView);
+		
 		// the plugin doesn't have direct access to the application context,
 		// so you have to get it first
 		Context context = this.cordova.getActivity().getApplicationContext();
