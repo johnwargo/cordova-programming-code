@@ -4,7 +4,7 @@
 
 @implementation CarrierPlugin
 
-- (void)getCarrier:(CDVInvokedUrlCommand*)command
+- (void)getCarrierName:(CDVInvokedUrlCommand*)command
 {
     CTTelephonyNetworkInfo *netinfo = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = [netinfo subscriberCellularProvider];
