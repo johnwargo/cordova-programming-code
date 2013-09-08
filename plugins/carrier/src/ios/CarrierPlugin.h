@@ -4,7 +4,7 @@
 
 }
 
-- (void)getCarrierName:(CDVInvokedUrlCommand*)command;
+- (void)getCarrier:(CDVInvokedUrlCommand*)command;
 - (void)getCountryCode:(CDVInvokedUrlCommand*)command;
 
 @end
