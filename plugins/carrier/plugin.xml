@@ -15,8 +15,8 @@
 		<!-- android-specific elements -->
 		<source-file src="src/android/CarrierPlugin.java" target-dir="src/com/cordovaprogramming/carrier" />
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="Carrier" >
-				<param name="android-package" value="com.cordovaprogramming.CarrierPlugin"/>
+			<feature name="CarrierPlugin" >
+				<param name="android-package" value="com.cordovaprogramming.carrier.CarrierPlugin"/>
 			</feature>
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/*">

@@ -25,7 +25,7 @@ public class CarrierPlugin extends CordovaPlugin {
 
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
-		
+
 		// the plugin doesn't have direct access to the application context,
 		// so you have to get it first
 		Context context = this.cordova.getActivity().getApplicationContext();
@@ -40,14 +40,14 @@ public class CarrierPlugin extends CordovaPlugin {
 		try {
 			// First check on the getCarrierName
 			if (ACTION_GET_CARRIER_NAME.equals(action)) {
-				// callbackContext.success(tm.getSimOperatorName());
-				callbackContext.success("getCarrierName Result");
+				callbackContext.success(tm.getSimOperatorName());
+				// callbackContext.success("getCarrierName Result");
 				return true;
 			} else {
 				// Next see if its a getCountryCode action
 				if (ACTION_GET_COUNTRY_CODE.equals(action)) {
-					// callbackContext.success(tm.getSimCountryIso());
-					callbackContext.success("getCountryCode Result");
+					callbackContext.success(tm.getSimCountryIso());
+					// callbackContext.success("getCountryCode Result");
 					return true;
 				}
 			}

@@ -1,7 +1,7 @@
 var cordova = require('cordova');
 
 var carrier = {
-	getCarrier : function(successCallback, errorCallback) {
+	getCarrierName : function(successCallback, errorCallback) {
 		cordova.exec(successCallback, errorCallback, 'CarrierPlugin', 'getCarrierName', []);
 	},
 
