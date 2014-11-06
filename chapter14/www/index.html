@@ -34,6 +34,7 @@
 
     function onDeviceReady() {
       console.log('onDeviceReady fired.');
+      navigator.notification.alert("Cordova is ready!");
       hi = document.getElementById('headingInfo');
       //Setup the watch
       //Read the compass every second (1000 milliseconds)
@@ -64,11 +65,11 @@
       hi.innerHTML = '<b>Heading: </b>None';
       //Then tell the user what happened.
       if (err.code == CompassError.COMPASS_NOT_SUPPORTED) {
-        alert('Compass not supported.');
+        navigator.notification.alert('Compass not supported.');
       } else if (err.code == CompassError.COMPASS_INTERNAL_ERR) {
-        alert('Compass Internal Error');
+        navigator.notification.alert('Compass Internal Error');
       } else {
-        alert('Unknown heading error!');
+        navigator.notification.alert('Unknown heading error!');
       }
     }
   </script>
