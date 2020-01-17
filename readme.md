@@ -1,9 +1,10 @@
-Apache Cordova 3 Programming
-============================
+# Apache Cordova 3 Programming
 
-This repository contains the Cordova source code for the application projects highlighted in Apache Cordova 3 Programming (www.cordovaprogramming.com). The application projects included herein were created using Cordova 3.0.
+This repo contains the Cordova source code for the application projects highlighted in Apache Cordova 3 Programming (www.cordovaprogramming.com). The application projects included herein were created using Cordova 3.0.
 
-There are a lot of code snippets throughout the book, but all I have published here is the complete applications included in the book.
+> Note: I published an update to the book in [Apache Cordova 4 Programming](https://github.com/johnwargo/ac4p). 
+
+There are a lot of code snippets shown throughout the book; what I published here is all of the complete applications described in the book.
 
 Folders:
 
@@ -14,8 +15,6 @@ Folders:
 
 You can purchase the book on Amazon.com at http://amzn.to/IRhB8C or the publisher's web site at http://www.informit.com/store/apache-cordova-3-programming-9780321957368. 
 
-If you have any questions, you can send me an email through the contact form on www.cordovaprogramming.com.
+---
 
-***
-
-You can find information on many different topics on my personal blog at www.johnwargo.com. Learn about all of my publications at www.johnwargobooks.com. 
+You can find information on many different topics on my personal blog at [johnwargo.com](https://www.johnwargo.com). Learn about all of my publications at [johnwargobooks.com](https://johnwargobooks.com).
