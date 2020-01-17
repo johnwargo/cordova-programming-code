@@ -2,7 +2,7 @@
 
 This repo contains the Cordova source code for the application projects highlighted in Apache Cordova 3 Programming (www.cordovaprogramming.com). The application projects included herein were created using Cordova 3.0.
 
-> Note: I published an update to the book in [Apache Cordova 4 Programming](https://github.com/johnwargo/ac4p). 
+> Note: This code is obsolete as I published an update to the book in [Apache Cordova 4 Programming](https://github.com/johnwargo/ac4p).
 
 There are a lot of code snippets shown throughout the book; what I published here is all of the complete applications described in the book.
 
